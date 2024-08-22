@@ -1,0 +1,21 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type ShortenedUrl {
+  _id: ID!
+  url: String!
+  shortId: String!
+}
+
+type Query {
+  getShortenedUrls: [ShortenedUrl!]!
+}
+
+type Mutation {
+  createShortenUrl(createShortenUrl: ShortenedUrlDto!): ShortenedUrl!
+}
+
+input ShortenedUrlDto {
+  url: String!
+}
